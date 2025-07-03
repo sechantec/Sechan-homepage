@@ -1,0 +1,26 @@
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.fixed-header {
+  position: fixed; top: 0; width: 100%;
+  background: #003366; color: white;
+  padding: 2rem 1rem; z-index: 999;
+  display: flex; justify-content: space-between;
+}
+.logo-title { display: flex; align-items: center; }
+.logo-title img { height: 40px; margin-right: 1rem; }
+.brand { color: white; font-size: 1.2rem; text-decoration: none; }
+.menu { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+.menu a { color: white; text-decoration: none; }
+.hero {
+  height: 400px;
+  background: url('images/plant-hero.png') center/cover no-repeat;
+  margin-top: 100px;
+}
+.section { padding: 5rem 2rem; min-height: 100vh; scroll-snap-align: start; }
+.section.bordered { border-top: 1px solid #ccc; }
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
