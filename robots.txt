@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /
+User-agent: Yeti
 Allow: /
 
 Sitemap: https://www.sechantec.co.kr/sitemap.xml
