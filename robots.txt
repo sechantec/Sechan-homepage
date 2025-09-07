@@ -1,9 +1,8 @@
 User-agent: *
 Allow: /
-Disallow: /company/
-Disallow: /philosophy/
 
 Sitemap: https://www.sechantec.co.kr/sitemap.xml
+
 
 
 
