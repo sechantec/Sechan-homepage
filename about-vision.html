@@ -9,6 +9,22 @@
   <meta name="robots" content="index,follow" />
   <link rel="stylesheet" href="/assets/site.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* 모바일 전용 줄바꿈 */
+    .br-mobile { display: none; }
+    @media (max-width: 768px) {
+      .br-mobile { display: inline; }
+    }
+
+    /* 가독성 보완 */
+    .vision-hero p,
+    .vision-statement p {
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+  </style>
 </head>
 <body>
   <div id="site-header"></div>
@@ -24,13 +40,14 @@
 
   <main class="page-content">
     <!-- 히어로 슬로건 -->
-    <section class="vision-hero">
+    <section class="vision-hero" style="text-align:center;">
       <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
       <h2>지속가능한 플랜트 설계의 기준</h2>
       <p>
-        세찬기술은 정확성과 효율을 동시에 충족하는<br>
-        엔지니어링을 통해 고객의 성과를 높이고,<br>
-        친환경·신산업 분야로 영역을 확장하여<br>
+        세찬기술은 정확성과 효율을 동시에 충족하는 엔지니어링을 통해
+        <span class="br-mobile"><br></span>
+        고객의 성과를 높이고, 친환경·신산업 분야로 영역을 확장하여
+        <span class="br-mobile"><br></span>
         <strong>글로벌 엔지니어링 파트너</strong>로 성장하겠습니다.
       </p>
     </section>
@@ -38,10 +55,13 @@
     <!-- 비전 설명 -->
     <section class="vision-statement" style="text-align:center;">
       <p>
-        우리는 축적된 도메인 지식과 풍부한 프로젝트 경험을<br>
-        기반으로 설계 품질을 극대화하고, 시간과 비용을 효율적으로 관리합니다.<br>
-        데이터에 근거한 의사결정과 투명한 협업 문화를 통해<br>
-        고객과의 신뢰를 공고히 하며, 지속가능한 설계 표준을 만들어갑니다.
+        우리는 축적된 도메인 지식과 풍부한 프로젝트 경험을 기반으로
+        <span class="br-mobile"><br></span>
+        설계 품질을 극대화하고, 시간과 비용을 효율적으로 관리합니다.
+        <span class="br-mobile"><br></span>
+        데이터에 근거한 의사결정과 투명한 협업 문화를 통해 고객과의
+        <span class="br-mobile"><br></span>
+        신뢰를 공고히 하며, 지속가능한 설계 표준을 만들어갑니다.
       </p>
     </section>
 
@@ -116,4 +136,5 @@
   <script src="/assets/site.js"></script>
 </body>
 </html>
+
 
