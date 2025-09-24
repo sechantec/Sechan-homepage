@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>공지 | ㈜세찬기술</title>
+  <meta name="description" content="공지/뉴스" />
+  <link rel="canonical" href="https://www.sechantec.co.kr/news.html" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <style>
+    /* 단일 컬럼 컨테이너 */
+    .news-wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 34px var(--pad) 60px;
+    }
+
+    /* 공지 리스트 */
+    .news-list{ list-style: none; margin: 0; padding: 0; }
+    .news-item{
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .news-item:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 10px 22px rgba(0,0,0,.10);
+    }
+    .news-top{
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:6px;
+    }
+    .news-date{
+      font-size:.92rem; color:#6b7280; background:#f3f4f6; border-radius:999px; padding:4px 10px;
+    }
+    .news-badge{
+      font-size:.8rem; color:#0b3a70; background:#e6eef8; border:1px solid #cfe0f5;
+      border-radius:999px; padding:3px 8px; font-weight:700;
+    }
+    .news-title{
+      margin:6px 0 2px; font-size:1.05rem; font-weight:700; color:#122; line-height:1.45;
+    }
+    .news-title a{ text-decoration:none; }
+    .news-title a:hover{ text-decoration:underline; }
+    .news-excerpt{
+      margin: 6px 0 0; color:#334; font-size:.96rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="page-hero">
+      <div>
+        <h1>공지</h1>
+        <p>세찬기술의 최신 소식을 전해드립니다</p>
+      </div>
+    </section>
+
+    <!-- 본문 -->
+    <section class="news-wrap">
+      <div>
+        <ul class="news-list">
+          <!-- 아이템 1 -->
+          <li class="news-item">
+            <div class="news-top">
+              <span class="news-date">2025-08-12</span>
+              <span class="news-badge">공지</span>
+            </div>
+            <h2 class="news-title">
+              <a href="#">웹사이트 리뉴얼 안내</a>
+            </h2>
+            <p class="news-excerpt">세찬기술 공식 홈페이지가 새롭게 리뉴얼 되었습니다. 더욱 편리해진 메뉴 구성과 개선된 사용성을 확인해보세요.</p>
+          </li>
+
+          <!-- 아이템 2 -->
+          <li class="news-item">
+            <div class="news-top">
+              <span class="news-date">2024-11-05</span>
+              <span class="news-badge">프로젝트</span>
+            </div>
+            <h2 class="news-title">
+              <a href="#">신규 프로젝트 착수</a>
+            </h2>
+            <p class="news-excerpt">반도체·바이오 등 주요 플랜트 분야의 신규 과제를 착수했습니다. 안정적인 품질과 일정으로 결과를 제공하겠습니다.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

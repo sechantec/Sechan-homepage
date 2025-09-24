@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>오시는길 | ㈜세찬기술</title>
+  <meta name="description" content="세찬기술 오시는길" />
+  <link rel="canonical" href="https://www.sechantec.co.kr/about-location.html" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <style>
+    .location-wrapper {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 40px var(--pad);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .location-text {
+      text-align: left;
+    }
+
+    .location-map iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .location-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .location-map {
+        margin-top: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <!-- 히어로 영역 -->
+    <section class="page-hero">
+      <div class="overlay">
+        <h1>오시는길</h1>
+        <p>㈜세찬기술 본사 위치 및 교통편 안내</p>
+      </div>
+    </section>
+
+    <!-- 위치 콘텐츠 -->
+    <section class="page-content">
+      <div class="location-wrapper">
+        <div class="location-text">
+          <h2 class="section-title">주소</h2>
+          <p>서울 금천구 서부샛길 606, 대성디폴리스 지식산업센터 A동 17층 1711-1호</p><br><br><br>
+
+          <h2 class="section-title">교통편</h2>
+          <ul>
+            <li>지하철 7호선 구로디지털단지역 8번 출구 도보 10분</li>
+            <li>버스 5012번, 5528번 탑승 후 디지털3단지·가산비즈니스센터 하차</li>
+            <li>자가용: 네비게이션에 "㈜세찬기술" 검색</li>
+          </ul>
+        </div>
+
+        <div class="location-map">
+          <!-- 구글 지도 Embed -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.1969478045708!2d126.87436657626674!3d37.479678529103346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b0349d2a7f95603%3A0x76554ba974043b07!2z7IS47LCs6riw7Iig!5e0!3m2!1sko!2skr!4v1755845384756!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/site.js"></script>
+</body>
+</html>
