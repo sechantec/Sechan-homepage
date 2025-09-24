@@ -9,7 +9,7 @@
   <meta name="robots" content="index,follow" />
   <link rel="stylesheet" href="/assets/site.css" />
   <style>
-    /* ===== 회사 연혁(위 섹션): 다른 컨셉 – 좌측 레일 + 카드 ===== */
+    /* ===== 회사 연혁(위 섹션) ===== */
     .history-wrap { max-width: 1000px; margin: 0 auto; padding: 28px var(--pad) 60px; }
 
     .company-history {
@@ -28,10 +28,7 @@
       border-radius:10px; padding:14px 16px; margin:14px 0;
       box-shadow:0 2px 6px rgba(10,30,60,.05);
     }
-    .ch-item .year {
-      display:inline-block; font-weight:700; color:#0b3a70; margin-right:8px;
-    }
-    .ch-item .meta { color:#556270; font-size:.95rem; }
+    .ch-item .year { font-weight:700; color:#0b3a70; margin-right:8px; }
     .ch-item .desc { margin:.35rem 0 0; color:#243447; }
 
     /* ===== 가운데 라벨 구분선 ===== */
@@ -47,10 +44,9 @@
       display:inline-block; background:#fff; padding:6px 14px;
       border:1px solid #e1e6ee; border-radius:999px; color:#324559; font-weight:700;
       box-shadow:0 1px 3px rgba(10,30,60,.04);
-      letter-spacing:.02em;
     }
 
-    /* ===== 프로젝트 연혁(아래 섹션): 가운데 라인 + 좌우 교차 ===== */
+    /* ===== 프로젝트 연혁 ===== */
     .timeline { position: relative; padding: 10px 0; }
     .timeline::before {
       content: ""; position: absolute; top: 0; bottom: 0; left: 50%;
@@ -75,73 +71,53 @@
     .titem h4 { margin: 0 0 6px; font-size: 1.02rem; color: #0b3a70; }
     .titem p  { margin: 0; font-size: .95rem; color: #243447; }
     .titem .tags { margin-top: 8px; font-size: .85rem; color: #58677a; }
-    .year-label {
-      position: relative; text-align: center; margin: 20px 0 8px; color: #324559;
-      font-weight: 700; letter-spacing: .02em;
-    }
+    .year-label { text-align: center; margin: 20px 0 8px; font-weight: 700; color:#324559; }
     .year-label span {
       background: #fff; padding: 4px 10px; border-radius: 999px; border:1px solid #e0e6ee;
       box-shadow: 0 1px 3px rgba(10,30,60,.04);
     }
 
-    /* 반응형 */
-    @media (max-width: 820px) {
-      .timeline::before { left: 10px; }
-      .titem { width: 100%; left: 0; padding-left: 38px; padding-right: 10px; text-align: left !important; }
-      .titem .dot { left: 3px; right: auto; }
-      .titem .card { text-align: left !important; max-width: 100%; }
+    /* ===== 모바일: 무조건 세로형 ===== */
+    @media (max-width: 1024px) {
+      .timeline::before { left: 20px; transform: none; }
+      .titem { width: 100% !important; left: 0 !important; padding-left: 50px; padding-right: 20px; text-align: left !important; margin-bottom: 20px; }
+      .titem .dot { left: 12px; right: auto; }
+      .titem .card { text-align: left !important; max-width: 100% !important; }
     }
   </style>
 </head>
 <body>
   <div id="site-header"></div>
 
-  <!-- 히어로: 공통 .page-hero (그라데이션 배경 / 상단바에 딱 붙음) -->
   <main>
-  <section class="page-hero">
-    <div>
-      <h1>연혁</h1>
-      <p>세찬기술의 발자취와 프로젝트 이정표</p>
-    </div>
-  </section>
-
-  <main class="history-wrap">
-    <!-- 🟦 회사 연혁 (위: 다른 컨셉) -->
-    <h2 style="text-align:center; margin-bottom:10px;">회사 연혁</h2>
-    <p style="text-align:center; color:#5b6776; margin-top:0; margin-bottom:18px;">
-      설립과 주요 이정표를 간결하게 요약합니다
-    </p>
-    <section class="company-history">
-      <div class="ch-item">
-        <div class="meta">
-          <span class="year">2023</span> ㈜세찬기술 설립
-        </div>
-        <div class="desc">플랜트 배관 설계 전문기업으로 출범</div>
+    <!-- Hero -->
+    <section class="page-hero">
+      <div>
+        <h1>연혁</h1>
+        <p>세찬기술의 발자취와 프로젝트 이정표</p>
       </div>
-      <div class="ch-item">
-        <div class="meta">
-          <span class="year">2024</span> 사무실 확장
-        </div>
-        <div class="desc">사업 확장에 따른 사무실 이전 및 확장</div>
-      </div>
-      <div class="ch-item">
-        <div class="meta">
-          <span class="year">2025</span> 역량 강화
-        </div>
-        <div class="desc">전문 엔지니어링 역량 강화</div>
-      </div>
-      <!-- 필요 시 항목 추가 -->
     </section>
 
-    <!-- ⛓️ 가운데 라벨 구분선 -->
-    <div class="section-divider"><span>프로젝트 연혁</span></div>
+    <main class="history-wrap">
+      <!-- 회사 연혁 -->
+      <h2 style="text-align:center; margin-bottom:10px;">회사 연혁</h2>
+      <p style="text-align:center; color:#5b6776; margin-top:0; margin-bottom:18px;">
+        설립과 주요 이정표를 간결하게 요약합니다
+      </p>
+      <section class="company-history">
+        <div class="ch-item"><div class="meta"><span class="year">2023</span> ㈜세찬기술 설립</div><div class="desc">플랜트 배관 설계 전문기업으로 출범</div></div>
+        <div class="ch-item"><div class="meta"><span class="year">2024</span> 사무실 확장</div><div class="desc">사업 확장에 따른 사무실 이전 및 확장</div></div>
+        <div class="ch-item"><div class="meta"><span class="year">2025</span> 역량 강화</div><div class="desc">전문 엔지니어링 역량 강화</div></div>
+      </section>
 
-    <!-- 🟦 프로젝트 연혁 (아래: 가운데 라인 + 좌우 교차) -->
-    <!-- 예시 데이터: 필요에 맞게 수정/추가 -->
-    <div class="year-label"><span>2025</span></div>
-    <section class="timeline">
-      <article class="titem left">
-        <span class="dot"></span>
+      <!-- 구분선 -->
+      <div class="section-divider"><span>프로젝트 연혁</span></div>
+
+      <!-- 프로젝트 연혁 예시 -->
+      <div class="year-label"><span>2025</span></div>
+      <section class="timeline">
+        <article class="titem left">
+          <span class="dot"></span>
         <div class="meta">2025.08 ~ (진행)</div>
         <div class="card">
           <h4>SK 바이오사이언스 Global R&PD Center</h4>
@@ -254,8 +230,9 @@
           <p>화공 플랜트 설계 및 모델</p>
           <div class="tags">대림 ENG. / 3H 플랜트 엔지니어링</div>
         </div>
-      </article>
-    </section>
+        </article>
+      </section>
+    </main>
   </main>
 
   <div id="site-footer"></div>
