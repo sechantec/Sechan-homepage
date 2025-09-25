@@ -263,5 +263,11 @@ footer{border-top:1px solid var(--border);background:#fafafa;color:#444;margin-t
   .timeline-item.right {
     left: 0;
   }
+.tight-text {
+  letter-spacing: -0.5px; /* 글자 간격 줄이기 */
+  /* 필요하면 줄 간격도 조정 가능 */
+  line-height: 1.4;
 }
+
+
 
