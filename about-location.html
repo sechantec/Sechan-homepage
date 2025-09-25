@@ -19,8 +19,19 @@
       align-items: start;
     }
 
-    .location-text {
+    .location-block {
       text-align: left;
+    }
+
+    .location-block ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .location-block li {
+      margin-bottom: 10px;
+      line-height: 1.5;
     }
 
     .location-map iframe {
@@ -33,9 +44,6 @@
     @media (max-width: 768px) {
       .location-wrapper {
         grid-template-columns: 1fr;
-      }
-      .location-map {
-        margin-top: 24px;
       }
     }
   </style>
@@ -52,40 +60,39 @@
       </div>
     </section>
 
-<!-- 위치 콘텐츠 -->
-<section class="page-content">
-  <div class="location-wrapper">
-    <div class="location-text">
-      <h2 class="section-title">주소</h2>
-      <p>
-        서울 금천구 서부샛길 606,
-        <span class="br-mobile"><br></span>
-        대성디폴리스 지식산업센터 A동 17층 1711-1호
-      </p>
-      <p>서울 금천구 가산동543-1</p>
+    <!-- 위치 콘텐츠 -->
+    <section class="page-content">
+      <div class="location-wrapper">
+        <!-- 주소 -->
+        <div class="location-block">
+          <h2 class="section-title">주소</h2>
+          <p>
+            서울 금천구 서부샛길 606,
+            <span class="br-mobile"><br></span>
+            대성디폴리스 지식산업센터 A동 17층 1711-1호
+          </p>
+          <p>서울 금천구 가산동543-1</p>
 
-      <h2 class="section-title">교통편</h2>
-      <ul>
-        <li>
-          지하철 7호선 구로디지털단지역
-          <span class="br-mobile"><br></span>
-          8번 출구 도보 10분
-        </li>
-        <li>
-          버스 5012번, 5528번 탑승 후
-          <span class="br-mobile"><br></span>
-          디지털3단지·가산비즈니스센터 하차
-        </li>
-        <li>자가용: 구글, 네이버에 "세찬기술" 검색</li>
-      </ul>
-    </div>
-  </div>
-</section>
+          <h2 class="section-title">교통편</h2>
+          <ul>
+            <li>
+              지하철 7호선 구로디지털단지역
+              <span class="br-mobile"><br></span>
+              8번 출구 도보 10분
+            </li>
+            <li>
+              버스 5012번, 5528번 탑승 후
+              <span class="br-mobile"><br></span>
+              디지털3단지·가산비즈니스센터 하차
+            </li>
+            <li>자가용: 구글, 네이버에 "세찬기술" 검색</li>
+          </ul>
+        </div>
 
+        <!-- 지도 -->
         <div class="location-map">
-          <!-- 구글 지도 Embed -->
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.1969478045708!2d126.87436657626674!3d37.479678529103346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b0349d2a7f95603%3A0x76554ba974043b07!2z7IS47LCs6riw7Iig!5e0!3m2!1sko!2skr!4v1755845384756!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.1969478045708!2d126.87436657626674!3d37.479678529103346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b0349d2a7f95603%3A0x76554ba974043b07!2z7IS47LCs6riw7Iig!5e0!3m2!1sko!2skr!4v1755845384756!5m2!1sko!2skr" 
             allowfullscreen="" loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
@@ -98,6 +105,7 @@
   <script src="/assets/site.js"></script>
 </body>
 </html>
+
 
 
 
