@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Allow:/
 
-Sitemap: https://www.sechantec.co.kr/sitemap.xml
+Sitemap:https://www.sechantec.co.kr/sitemap.xml
+
