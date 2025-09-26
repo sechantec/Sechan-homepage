@@ -100,7 +100,9 @@ main{max-width:var(--maxw);margin:0 auto;padding:32px var(--pad)}
   height: 320px;
   max-width: var(--maxw);
   margin: 0 auto; /* 좌우 중앙, 상단 여백 제거 */
-  border-radius: 0 0 16px 16px;
+  border-radius: 16px;
+  margin-top: 12px; /* 헤더랑 살짝 띄움 */
+
 
 
   display: flex;
@@ -268,6 +270,7 @@ footer{border-top:1px solid var(--border);background:#fafafa;color:#444;margin-t
   /* 필요하면 줄 간격도 조정 가능 */
   line-height: 1.4;
 }
+
 
 
 
