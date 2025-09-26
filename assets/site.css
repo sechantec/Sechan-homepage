@@ -99,7 +99,7 @@ main{max-width:var(--maxw);margin:0 auto;padding:32px var(--pad)}
   position: relative;
   height: 320px;
   max-width: var(--maxw);
-  margin: 12px auto 0;  /* 위쪽에 12px 여백 */
+  margin: var(--header-h) auto 0; /* 헤더 높이만큼 내려옴 */
   border-radius: 16px;
 
   display: flex;
@@ -115,7 +115,6 @@ main{max-width:var(--maxw);margin:0 auto;padding:32px var(--pad)}
     #2b4d6d 100%
   );
 }
-
 
 .page-hero h1 {
   font-size: 2.4rem;
@@ -268,6 +267,7 @@ footer{border-top:1px solid var(--border);background:#fafafa;color:#444;margin-t
   /* 필요하면 줄 간격도 조정 가능 */
   line-height: 1.4;
 }
+
 
 
 
