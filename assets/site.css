@@ -99,11 +99,8 @@ main{max-width:var(--maxw);margin:0 auto;padding:32px var(--pad)}
   position: relative;
   height: 320px;
   max-width: var(--maxw);
-  margin: 0 auto; /* 좌우 중앙, 상단 여백 제거 */
+  margin: 12px auto 0;  /* 위쪽에 12px 여백 */
   border-radius: 16px;
-  margin-top: 12px; /* 헤더랑 살짝 띄움 */
-
-
 
   display: flex;
   align-items: center;
@@ -114,10 +111,11 @@ main{max-width:var(--maxw);margin:0 auto;padding:32px var(--pad)}
 
   background: linear-gradient(
     135deg,
-    #9aa8b8 0%,   /* 어둡게 톤 다운된 그레이 */
-    #2b4d6d 100%  /* 딥 블루 */
+    #9aa8b8 0%,
+    #2b4d6d 100%
   );
 }
+
 
 .page-hero h1 {
   font-size: 2.4rem;
@@ -270,6 +268,7 @@ footer{border-top:1px solid var(--border);background:#fafafa;color:#444;margin-t
   /* 필요하면 줄 간격도 조정 가능 */
   line-height: 1.4;
 }
+
 
 
 
