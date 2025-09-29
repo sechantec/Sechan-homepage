@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>㈜세찬기술</title>
+    <link>https://www.sechantec.co.kr/</link>
+    <description>㈜세찬기술의 최신 소식과 업데이트</description>
+    <language>ko</language>
+    <lastBuildDate>Mon, 29 Sep 2025 09:00:00 +0900</lastBuildDate>
+
+    <!-- ✅ 최근 업데이트된 페이지를 item으로 추가 -->
+    <item>
+      <title>메인 페이지 리뉴얼</title>
+      <link>https://www.sechantec.co.kr/index.html</link>
+      <description>메인 페이지가 새롭게 리뉴얼되었습니다.</description>
+      <pubDate>Mon, 29 Sep 2025 09:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>회사소개 페이지 업데이트</title>
+      <link>https://www.sechantec.co.kr/about.html</link>
+      <description>회사소개 페이지가 새롭게 개편되었습니다.</description>
+      <pubDate>Sun, 28 Sep 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>공지사항 등록</title>
+      <link>https://www.sechantec.co.kr/news.html</link>
+      <description>새로운 공지사항이 등록되었습니다.</description>
+      <pubDate>Sat, 27 Sep 2025 10:30:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
