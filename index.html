@@ -4,135 +4,96 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- 페이지 고유 타이틀/디스크립션 -->
-  <title>㈜세찬기술 | 메인</title>
-  <meta name="description" content="플랜트·배관 3D 설계 전문 회사, 세찬기술의 공식 웹사이트." />
+  <title>㈜세찬기술 | 플랜트 배관 설계 전문기업</title>
+  <meta name="description" content="플랜트·배관 3D 설계와 자동화 솔루션을 제공하는 ㈜세찬기술의 공식 웹사이트." />
   <link rel="canonical" href="https://www.sechantec.co.kr/" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (페이지별로 내용/URL 맞춤) -->
+  <!-- Open Graph -->
   <meta property="og:site_name" content="㈜세찬기술" />
   <meta property="og:title" content="㈜세찬기술 | 플랜트 배관 설계 전문기업" />
-  <meta property="og:description" content="바이오·석유화학·발전·반도체 분야에서 신뢰받는 엔지니어링 서비스를 제공합니다." />
+  <meta property="og:description" content="바이오·석유화학·발전·반도체 분야에서 검증된 3D 배관 설계와 자동화 솔루션." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.sechantec.co.kr/" />
   <meta property="og:image" content="https://www.sechantec.co.kr/img/og-image.png" />
 
-  <link rel="stylesheet" href="/assets/site.css?v=20250924a" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/site.css?v=20251002a" />
+
   <style>
-    /* === 레이아웃 보정 === */
-    .slideshow-wrap{ margin-top: var(--header-h); }
-    .slideshow-inner{ max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
-
-    /* === 히어로 슬라이드 전용 === */
-    .slideshow-container{
-      position: relative;
-      height: 60vh;           /* 필요시 50~70vh로 조절 */
-      min-height: 360px;
-      overflow: hidden;
-      border-radius: 16px;
-      background:#000;
-    }
-    @media (max-width:980px){
-      .slideshow-container{ height: 46vh; min-height: 280px; border-radius: 12px; }
-    }
-    .slide{ position:absolute; inset:0; opacity:0; transition:opacity .8s ease-in-out; }
-    .slide.active{ opacity:1; }
-
-    /* ✅ 히어로 이미지는 꽉 채우기 (cover) */
-    .slideshow-container .slide img{
-      position:absolute; inset:0;
-      width:100%; height:100%;
-      object-fit:cover; object-position:center;
-      display:block;
-    }
-
-    .slide .caption{
-      position:absolute; left:0; right:0; bottom:0;
-      padding:24px; color:#fff; text-align:left;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
-    }
-    .slide .caption h2{ margin:0 0 6px; font-size:1.9rem; }
-    .slide .caption p{ margin:0; line-height:1.5; opacity:.95; }
-
-    /* === 하단 카드(회사소개/서비스/공지) 전용 === */
-    .bottom-menu{ max-width: var(--maxw); margin:24px auto; padding:0 var(--pad); }
-    .bm-grid{ display:grid; grid-template-columns:1fr; gap:16px; }
-    @media (min-width:900px){ .bm-grid{ grid-template-columns:repeat(3,1fr); } }
-    .bm-card{ border:1px solid var(--border); border-radius:12px; overflow:hidden; background:#fff; text-decoration:none; display:block; }
-
-    /* 썸네일 래퍼 + contain: 이미지 절대 안 잘림 */
-    .bm-thumb{
-      height:150px; background:#ffffff; /* 여백 색상(흰색 원하면 #fff로 변경) */
-      display:flex; align-items:center; justify-content:center;
-    }
-    .bm-thumb img{
-      max-width:100%; max-height:100%;
-      width:auto; height:auto; display:block;
-    }
-    .bm-card h3{ margin:12px 14px; }
+    /* 페이지 전용(필요 시 별도 파일로 이동 가능) */
+    .home-intro { max-width: var(--maxw); margin: 20px auto 0; padding: 0 var(--pad); }
+    .home-intro h2 { font-size: 1.4rem; margin: 0 0 8px; }
+    .home-intro p { margin: 0 0 8px; color: var(--muted); }
   </style>
 </head>
 <body>
   <div id="site-header"></div>
 
-  <!-- 슬라이드 -->
-  <div class="slideshow-wrap">
+  <!-- 히어로 슬라이드 -->
+  <div class="slideshow-wrap" aria-label="주요 비주얼">
     <div class="slideshow-inner">
-      <div class="slideshow-container">
+      <div class="slideshow-container" role="region" aria-roledescription="carousel" aria-label="회사 핵심 메시지">
         <!-- Slide 1 -->
-        <div class="slide active">
-          <img src="/img/plant1.png" alt="플랜트 이미지 1" />
+        <div class="slide active" aria-hidden="false">
+          <img src="/img/plant1.png" alt="플랜트 배관 설계 비주얼 1" />
           <div class="caption">
             <h2>정확한 설계, 신뢰의 가치</h2>
             <p>플랜트 배관 전문기업 ㈜세찬기술</p>
-            <p class="tight-text">축적된 경험과 최신 기술을 통한 최적 설계 솔루션 제공</p>
+            <p class="tight-text">3D 설계·자동화 솔루션으로 리스크를 줄이고 일정을 단축합니다.</p>
           </div>
         </div>
         <!-- Slide 2 -->
-        <div class="slide">
-          <img src="/img/plant2.png" alt="플랜트 이미지 2" />
+        <div class="slide" aria-hidden="true">
+          <img src="/img/plant2.png" alt="플랜트 배관 설계 비주얼 2" />
           <div class="caption">
             <h2>정확한 설계, 신뢰의 가치</h2>
-            <p>플랜트 배관 전문기업 ㈜세찬기술</p>
-            <p>신뢰받는 파트너, 세찬기술의 최적 설계 서비스</p>
+            <p>바이오·석유화학·발전·반도체 분야 검증</p>
+            <p class="tight-text">데이터 기반 간섭·시공성 검토로 품질과 효율을 동시에.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- 메인 요약 -->
+  <section class="home-intro" aria-label="회사 요약 소개">
+    <h2 class="visually-hidden">세찬기술 요약</h2>
+    <p>
+      세찬기술은 플랜트 배관 설계에 특화된 엔지니어링 기업으로,
+      3D CAD 기반의 정밀한 간섭·시공성 검토와 표준화·자동화된 설계 프로세스를 통해
+      안정적인 품질과 효율을 제공합니다.
+    </p>
+    <p>
+      축적된 도메인 지식과 데이터 기반 의사결정으로 고객의 목표를 빠르고 정확하게 실현합니다.
+    </p>
+  </section>
+
   <!-- 하단 선택형 메인 메뉴 -->
-  <section class="bottom-menu" aria-label="하단 선택 메뉴">
+  <section class="bottom-menu" aria-label="바로가기">
     <div class="bm-grid">
-      <a class="bm-card" href="/about.html">
+      <a class="bm-card" href="/about.html" aria-label="회사소개 바로가기">
         <div class="bm-thumb">
-          <img src="/img/menu-about.PNG" alt="회사소개" />
+          <img src="/img/menu-about.png" alt="회사소개 섬네일" />
         </div>
-        <h3></h3>
+        <h3>회사소개</h3>
       </a>
-      <a class="bm-card" href="/services.html">
+      <a class="bm-card" href="/services.html" aria-label="사업분야 바로가기">
         <div class="bm-thumb">
-          <img src="/img/menu-services.png" alt="서비스" />
+          <img src="/img/menu-services.png" alt="사업분야 섬네일" />
         </div>
-        <h3></h3>
+        <h3>사업분야</h3>
       </a>
-      <a class="bm-card" href="/news.html">
+      <a class="bm-card" href="/news.html" aria-label="공지 및 소식 바로가기">
         <div class="bm-thumb">
-          <img src="/img/menu-news.png" alt="공지" />
+          <img src="/img/menu-news.png" alt="공지 및 소식 섬네일" />
         </div>
-        <h3></h3>
+        <h3>공지/소식</h3>
       </a>
     </div>
   </section>
 
   <div id="site-footer"></div>
-  <script src="/assets/site.js"></script>
+  <script src="/assets/site.js?v=20251002a"></script>
 </body>
 </html>
-
-
-
-
-
-
