@@ -288,6 +288,17 @@ footer{ border-top:1px solid var(--border); background:#fafafa; color:#444; marg
   margin: 24px auto;
   padding: 0 var(--pad);
 }
+/* 모바일 전용 줄바꿈 */
+.br-mobile { display: none; }
+@media (max-width: 768px) {
+  .br-mobile { display: inline; }
+}
+
+/* PC 전용 줄바꿈 */
+.br-pc { display: inline; }
+@media (max-width: 768px) {
+  .br-pc { display: none; }
+}
 
 .bm-grid {
   display: grid;
@@ -353,6 +364,7 @@ footer{ border-top:1px solid var(--border); background:#fafafa; color:#444; marg
     display: inline;
   }
 }
+
 
 
 
