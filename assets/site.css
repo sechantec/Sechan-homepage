@@ -364,6 +364,14 @@ footer{ border-top:1px solid var(--border); background:#fafafa; color:#444; marg
     display: inline;
   }
 }
+.footer-pc { display: block; }
+.footer-mobile { display: none; }
+
+@media (max-width: 768px) {
+  .footer-pc { display: none; }
+  .footer-mobile { display: block; }
+}
+
 
 
 
