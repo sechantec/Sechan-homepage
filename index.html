@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>㈜세찬기술 | 플랜트 배관 설계 전문기업</title>
-  <meta name="description" content="플랜트·배관 3D 설계와 표준화된 프로세스로 신뢰받는 엔지니어링 서비스를 제공합니다." />
+  <meta name="description" content="플랜트·배관 3D 설계와 자동화 솔루션을 제공하는 ㈜세찬기술의 공식 웹사이트." />
   <link rel="canonical" href="https://www.sechantec.co.kr/" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="㈜세찬기술" />
   <meta property="og:title" content="㈜세찬기술 | 플랜트 배관 설계 전문기업" />
-  <meta property="og:description" content="바이오·석유화학·발전·반도체 분야에서 검증된 3D 배관 설계 역량." />
+  <meta property="og:description" content="바이오·석유화학·발전·반도체 분야에서 검증된 3D 배관 설계와 자동화 솔루션." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.sechantec.co.kr/" />
   <meta property="og:image" content="https://www.sechantec.co.kr/img/og-image.png" />
@@ -21,56 +21,89 @@
   <link rel="stylesheet" href="/assets/site.css?v=20251002b" />
 </head>
 <body>
+  <!-- 상단 메뉴바: 파셜로 그대로 유지 -->
   <div id="site-header"></div>
 
-  <!-- 섹션 1: 회사소개 히어로 -->
-  <section class="hero-section" aria-label="회사소개">
-    <img class="hero-bg" src="/img/hero-about.jpg" alt="" />
-    <div class="hero-inner">
-      <div class="hero-card left">
-        <h1 class="hero-title">정확한 설계, 신뢰의 가치</h1>
-        <p class="hero-desc">
+  <!-- 기존 Hero 슬라이드: 그대로 유지 -->
+  <div class="slideshow-wrap" aria-label="주요 비주얼">
+    <div class="slideshow-inner">
+      <div class="slideshow-container" role="region" aria-roledescription="carousel" aria-label="회사 핵심 메시지">
+        <!-- Slide 1 -->
+        <div class="slide active" aria-hidden="false">
+          <img src="/img/plant1.png" alt="플랜트 배관 설계 비주얼 1" />
+          <div class="caption">
+            <h2>정확한 설계, 신뢰의 가치</h2>
+            <p>플랜트 배관 전문기업 ㈜세찬기술</p>
+            <p class="tight-text">3D 설계·표준화된 프로세스로 리스크를 줄이고 일정을 단축합니다.</p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide" aria-hidden="true">
+          <img src="/img/plant2.png" alt="플랜트 배관 설계 비주얼 2" />
+          <div class="caption">
+            <h2>정확한 설계, 신뢰의 가치</h2>
+            <p>바이오·석유화학·발전·반도체 분야 검증</p>
+            <p class="tight-text">데이터 기반 간섭·시공성 검토로 품질과 효율을 동시에.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ▼▼▼ 신규: Hero 크기와 동일한 세로 스택 패널 3개 ▼▼▼ -->
+  <main class="feature-stack" aria-label="요약 섹션">
+    <!-- 회사소개 패널 -->
+    <a class="feature-panel" href="/about.html" aria-label="회사소개 바로가기">
+      <img src="/img/feature-about.jpg" alt="회사소개 대표 이미지" />
+      <div class="feature-overlay">
+        <h3>회사소개</h3>
+        <p>
           세찬기술은 플랜트 배관 설계에 특화된 엔지니어링 기업입니다.
-          3D CAD 기반 간섭·시공성 검토와 표준화된 프로세스로
-          안정적인 품질과 효율을 제공합니다.
+          3D CAD 기반의 정밀 검토와 표준화된 프로세스로 안정적인 품질과 효율을 제공합니다.
         </p>
-        <a class="btn" href="/about.html" aria-label="회사소개 자세히 보기">자세히 보기</a>
+        <span class="feature-cta">자세히 보기</span>
       </div>
-    </div>
-  </section>
+    </a>
 
-  <!-- 섹션 2: 서비스 히어로 -->
-  <section class="hero-section dim" aria-label="사업분야">
-    <img class="hero-bg" src="/img/hero-services.jpg" alt="" />
-    <div class="hero-inner">
-      <div class="hero-card right">
-        <h2 class="hero-title">플랜트 배관 설계 전문</h2>
-        <p class="hero-desc">
-          기본·상세 설계부터 간섭/시공성 검토까지,
-          프로젝트 전 단계에서 정확성과 일정을 동시에 만족시키는
-          실무 중심의 설계 서비스를 제공합니다.
+    <!-- 서비스 패널 -->
+    <a class="feature-panel" href="/services.html" aria-label="사업분야 바로가기">
+      <img src="/img/feature-services.jpg" alt="사업분야 대표 이미지" />
+      <div class="feature-overlay">
+        <h3>사업분야</h3>
+        <p>
+          배관 3D 설계, 간섭·시공성 검토, 표준/도면 체계 구축 등
+          플랜트 엔지니어링 전 과정에서 실무 중심의 서비스를 제공합니다.
         </p>
-        <a class="btn" href="/services.html" aria-label="사업분야 자세히 보기">사업분야</a>
+        <span class="feature-cta">자세히 보기</span>
       </div>
-    </div>
-  </section>
+    </a>
 
-  <!-- 섹션 3: 뉴스/공지 히어로 -->
-  <section class="hero-section" aria-label="공지 및 소식">
-    <img class="hero-bg" src="/img/hero-news.jpg" alt="" />
-    <div class="hero-inner">
-      <div class="hero-card left">
-        <h2 class="hero-title">공지 & 소식</h2>
-        <p class="hero-desc">
-          세찬기술의 최신 소식을 확인하세요.
-          프로젝트 소식과 공지사항을 통해 더 가까이 소통하겠습니다.
+    <!-- 뉴스/공지 패널 -->
+    <a class="feature-panel" href="/news.html" aria-label="공지 및 소식 바로가기">
+      <img src="/img/feature-news.jpg" alt="공지 및 소식 대표 이미지" />
+      <div class="feature-overlay">
+        <h3>공지/소식</h3>
+        <p>
+          프로젝트 소식과 기술 인사이트를 전해드립니다.
+          최신 업데이트를 확인해 보세요.
         </p>
-        <a class="btn" href="/news.html" aria-label="공지 및 소식으로 이동">바로가기</a>
+        <span class="feature-cta">자세히 보기</span>
       </div>
+    </a>
+  </main>
+  <!-- ▲▲▲ 여기까지 신규 스택. Hero와 동일한 높이로 세팅됨 ▲▲▲ -->
+
+  <!-- (선택) 기존 하단 카드가 필요 없으면 삭제해도 됨 -->
+  <!-- 유지하려면 아래 섹션을 남겨두세요 -->
+  <!--
+  <section class="bottom-menu" aria-label="바로가기">
+    <div class="bm-grid">
+      ...
     </div>
   </section>
+  -->
 
   <div id="site-footer"></div>
-  <script src="/assets/site.js?v=20251002b"></script>
+  <script src="/assets/site.js?v=20251002a"></script>
 </body>
 </html>
