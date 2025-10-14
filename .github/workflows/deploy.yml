@@ -1,0 +1,24 @@
+name: Deploy sitemap & robots.txt to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - '.github/workflows/deploy.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 정적 HTML 사이트라면 별도 build 단계 없이 그대로 배포 가능
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # 정적 파일이 루트에 있으므로 ./ 유지
